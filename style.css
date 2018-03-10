@@ -304,6 +304,7 @@ header .right .main-bar .search .form-search .wrap-group::before {
     border: 1px solid transparent;
     margin-top: 15px;
     margin-bottom: 15px;
+    transition: all .8s;
 }
 #products .wrap-products .item .wrap-img {
     position: relative;
@@ -330,6 +331,7 @@ header .right .main-bar .search .form-search .wrap-group::before {
 }
 #products .wrap-products .item:hover {
     border: 1px solid #e1e1e1;
+    box-shadow: 0 5px 6px grey;
 }
 #products .wrap-products .item:hover .wrap-img .btn-see-detail>a {
     transform: scaleX(1);
@@ -766,7 +768,7 @@ footer .row .tags span.item-tag a:hover {
 
 
 
-/*============= style page product-detail.html =========*/
+/*============= style page product-detail.html =========*/    
 #product-detail .describe{
 	margin-bottom: 50px;
 }
@@ -782,7 +784,8 @@ footer .row .tags span.item-tag a:hover {
     border: 3px solid #666666;
     width: 380px;
     height: 380px;
-    display: inline-block;
+    display: none;
+    background-color: #fff;
     background-image: url('images/product1.jpg');
     background-repeat: no-repeat;
     position: fixed;
@@ -966,4 +969,90 @@ footer .row .tags span.item-tag a:hover {
 	margin: 15px 0 30px;
 	text-align: center;
 }
+
 /*============= end style page product-detail.html =========*/
+
+
+
+
+/*=============== style page contact.html ===========*/
+#contact{
+    margin-bottom: 30px
+}
+#contact .left, #contact .right{
+    width: 50%;
+    box-sizing: border-box;
+}
+#contact .left .title{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#contact .left .item{
+    margin-bottom: 15px;
+    display: flex;
+}
+#contact .left .item .title-item{
+    width: 30%;
+    box-sizing: border-box;
+    text-align: right;
+    font-weight: 700;
+    color: #444444;
+    padding: 0 15px;
+}
+#contact .left .item .wrap-input{
+    width: 70%;
+    box-sizing: border-box;
+     padding: 0 15px;
+}
+#contact .left .item .wrap-input input, #contact .left .item .wrap-input textarea{
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: #e2e2e2 1px solid;
+    width: 100%;
+    box-sizing: border-box;
+}
+#contact .left .item .wrap-input input:hover,
+#contact .left .item .wrap-input input:focus,
+#contact .left .item .wrap-input textarea:focus,
+#contact .left .item .wrap-input textarea:hover{
+    border-color: #6fc4ff;
+    box-shadow: 0 0 10px #6fc4ff;
+    outline: 0;
+}
+#contact .left .item .wrap-input input::placeholder{
+    color: #999999;
+}
+#contact .left .btn{
+    text-align: center;
+}
+#contact .left .btn button{
+    padding: 10px 15px;
+    background: #007bff;
+    border: 1px solid #007bff;
+    color: #fff;
+    outline: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+}
+#contact .left .btn button:hover{
+    background: #0037ffd4;
+    border-color: #0037ffd4;
+    box-shadow: 0 0 10px #007bff;
+}
+
+#contact .right .title{
+    margin-bottom: 30px;
+}
+#contact .right .item{
+    margin: 15px 0;
+    display: flex;
+    color: #444444;
+    font-size: 16px;
+}
+#contact .right .item .icon{
+    margin-right: 15px;
+}
+
+/*============= end style page contact.html =========*/
