@@ -329,7 +329,6 @@ header .right .main-bar .search .form-search .wrap-group::before {
 }
 #products .wrap-products .item:hover {
     border: 1px solid #e1e1e1;
-    box-shadow: 0 5px 6px grey;
 }
 #products .wrap-products .item:hover .wrap-img .btn-see-detail>a {
     transform: scaleX(1);
